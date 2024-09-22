@@ -1,0 +1,164 @@
+\documentclass[11pt]{article}       % set main text size
+\usepackage[letterpaper,                % set paper size to A4. change to letterpaper for US/Canadian resumes
+top=0.35in,                          % specify top page margin
+bottom=0.5in,                       % specify bottom page margin
+left=0.5in,                         % specify left page margin
+right=0.5in]{geometry}              % specify right page margin
+
+\usepackage{xcolor}    
+\usepackage{XCharter}               % set font
+\usepackage[T1]{fontenc}            % output encoding
+\usepackage[utf8]{inputenc}         % input encoding
+\usepackage{enumitem}               % enable lists for bullet points: itemize and \item
+\usepackage[hidelinks]{hyperref}    % format hyperlinks
+\usepackage{titlesec}               % enable section title customization
+\raggedright                        % disable text justification
+\pagestyle{empty}                   % disable page numbering
+
+% ensure PDF output will be all-Unicode and machine-readable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% format section headings: bolding, size, white space above and below
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule\vspace{-6.5pt}]
+
+% format bullet points: size, white space above and below, white space between bullets
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-2pt, leftmargin=12pt}
+
+% resume starts here
+\begin{document}
+
+% name
+\centerline{\Huge Aryan Vinod Keluskar}
+
+\vspace{5pt}
+
+% contact information
+\centerline{ \color{blue}{\href{https://www.linkedin.com/in/aryankeluskar/}{linkedin.com/in/aryankeluskar}} \color{black}{|}  \color{blue} \href{https://www.github.com/aryankeluskar}{github.com/aryankeluskar}  
+\color{black}{|
+(602) 552-6402 | \href{mailto:akeluska@asu.edu}{akeluska@asu.edu} }}
+
+\vspace{-10pt}
+
+
+% education section
+\section*{Education}
+
+\textbf{BS in Computer Science}, Minor in Statistics \hfill \textit{Expected Graduation:} May 2026 \\
+ \href{https://barretthonors.asu.edu/}{\textbf{Arizona State University} (The Barrett Honors College)} \hfill GPA: 3.94  \\
+\textbf{Coursework:} \textit{Data Structures \& Algorithms, Programming with C/C++, Computer Organization, Assembly, Object Oriented Programming, Digital Design, Software Engineering, Operating Systems, Information Assurance.}
+
+\vspace{-6.5pt}
+
+
+% experience section
+\section*{Experience}
+\textbf{Software Engineering Intern}, \href{https://scikit.bio/}{The Biodesign Institute -- Qiyun Lab} \hfill May 2024 -- Aug 2024 \\
+\vspace{-5pt}
+\begin{itemize}
+  % \item Developed and optimized statistical models in Python, enhancing prediction accuracy for data by 15.5\% and improved statistical significance by 10\% for gut microbe analysis by collaborating with senior researchers.
+  % \item Created and maintained documentation which was presented at the ISMB 2024 Computational Biology Conference, attracting over 200 participants.
+  % \item Improved Agile \& CI/CD workflows for an open-source Python library for bioinformatics by refactoring inefficient functions. Implemented new functions to resolve codebase warnings by 91.4\%.
+  % \item Increased code coverage by 12.5\% by writing unit tests.
+
+
+    \item Developed and optimized statistical models in Python, enhancing prediction accuracy for data by 15.5\%.
+    \item Implemented linear mixed effects models to improve statistical significance by 10\% for gut microbe analysis by collaborating with senior researchers.
+    \item Increased code coverage by 12.5\% by writing unit tests and improving CI/CD Agile workflows for an open-source Python library for bioinformatics. Resolved codebase warnings by 91.4 \%
+\end{itemize}
+
+% \textbf{Software Developer}, {EPICS at ASU} \hfill Aug 2024 -- Present \\
+% \vspace{-5pt}
+% \begin{itemize}
+% \item 
+% \end{itemize}
+
+\textbf{Undergraduate Researcher}, \href{https://dmml.asu.edu/}{Data Mining and Machine Learning Lab} \hfill Apr 2024 -- Present \\
+\vspace{-5pt}
+\begin{itemize}
+\item Trained a Time Series model to predict genre-based movie ratings with 90.3\% accuracy. Analyzed and filtered IMDB’s dataset of over 730,000 entries using SQL and Python, producing a robust dataset. 
+\item Improved dataset security by implementing homomorphic encryption schemes. Gained experience in regression modeling and probabilistic classifiers.
+\end{itemize}
+
+\textbf{Website Development Intern}, \href{https://www.rcvinnovations.com/}{RCV Innovations Pvt. Ltd.} \hfill Jun 2023 -- Jul 2023 \\
+\vspace{-5pt}
+\begin{itemize}
+\item Developed backend infrastructure to integrate digital twins \& 3D models onto websites using JavaScript, yielding a remarkable 46\% surge in customer shopping satisfaction. 
+\item Collected customer behavior data with A/B Testing. Increased click-through-rate by 29\% using Apache Kafka, Google Analytics and Mattertraffic to extract information from customer website sessions.
+\item Developed a responsive website leveraging HTML, CSS \& JavaScript, increasing user engagement by 21\%. 
+\end{itemize}
+
+
+\vspace{-15.5pt}
+
+% projects section
+\section*{Projects}
+
+
+% \textbf{FreshUntil} | ReactJS, NodeJS, TypeScript, Python, Google Cloud \hfill \href{https://git.new/fresh}{\color{blue} git.new/fresh} \\
+% \vspace{-6pt}
+% \begin{itemize}
+%   \item Developed a full stack web-app that reduces food wastage by  automated expiry notifications, personalized recipe suggestions, and offering surplus food to neighbors. Hackathon Project.
+% \end{itemize}
+
+\textbf{Automated Medical Resource Allocation} | Next.js, TypeScript, Tailwind \hfill \href{https://git.new/ecmo-allocation}{\color{blue} git.new/ecmo-allocation} \\
+\vspace{-6pt}
+\begin{itemize}
+\item Optimized ECMO Machine allocation for 27+ Maricopa County hospitals by developing a system that integrates into existing infrastructure of insurance providers. Collaborated in a 6-member team with Mayo Clinic.
+\end{itemize}
+
+\textbf{EasyWire} | Python, Machine Learning, FastAPI, HTML, CSS, Plaid, Docker \hfill \href{https://dub.sh/easywire}{\color{blue} dub.sh/easywire} \\
+\vspace{-6pt}
+\begin{itemize}
+  \item Developed and deployed a machine learning model to analyze currency exchange market trends and detect currency arbitrage. Achieved 4\% reduction in losses using sentiment analysis and quantitative analysis.
+\end{itemize}
+
+\textbf{MelodySyncer} | TypeScript, Python, FastAPI, HTML, CSS, Google Cloud \hfill \href{https://dub.sh/melodysyncer}{\color{blue} dub.sh/melodysyncer} \\
+\vspace{-6pt}
+\begin{itemize}
+  \item Web API to convert Spotify songs or playlists to YouTube within 0.2 seconds. Improved performance by 12x with multi-threading and developed a unique scoring system that maximizes speed and accuracy.
+\end{itemize}
+
+% \textbf{AI that Solves Minesweeper} | Python \hfill \href{https://git.new/irina}{\color{blue} git.new/irina} \\
+% \vspace{-9pt}
+% \begin{itemize}
+%   \item Reinforcement Learning model using Q-Learning to solve Minesweeper in near-world record time by optimizing algorithms and multi-threading. Boosted performance by 80\% with a probabilistic approach.
+% \end{itemize}
+
+% \textbf{EdComposer} | ReactJS, NodeJS, TypeScript, OpenAI, AWS Lambda \hfill \href{https://git.new/edcomposer}{\color{blue} git.new/edcomposer} \\
+% \vspace{-6pt}
+% \begin{itemize}
+%   \item Video generator that uses Artificial Intelligence to create engaging short-form videos for education. Boosted student engagement by 23\%. Improved performance by 600\% with multi-threading.
+% \end{itemize}
+
+% alternate formatting for projects section
+% \section*{Projects}
+% \begin{itemize}
+%   \item \textbf{QuantSoftware Toolkit:} Open source Python library for data analysis and machine learning for finance
+%   \item \textbf{GitHub Visualization:} Data visualization of Git Log data using D3 to analyze project trends over time
+%   \item \textbf{Recommendation System:} Music and movie recommender systems using collaborative filtering on public datasets
+%   \item \textbf{Mac Setup:} Book that gives step by step instructions on setting up developer environment on Mac OS
+% \end{itemize}
+
+\vspace{-15.5pt}
+
+% skills section
+\section*{Skills}
+\textbf{Languages:} Java,  C++, Python, JavaScript, SQL, C, Julia, Ruby on Rails, Golang, Scheme, Prolog \\
+\textbf{Technologies:} Linux / Unix, GitHub, Raspberry Pi, Arduino, Docker, Apache Kafka, Plaid, Stripe API, OpenAI\\
+\textbf{Full-Stack Development:} HTML, CSS, TypeScript, JavaScript, Node.js, React.js, Next.js, MongoDB, SQL, SSL, DigitalOcean, Amazon Web Services (AWS), Google Cloud Platform (GCP), Google OAuth, Tailwind \\
+
+
+\vspace{-6.5pt}
+
+\section*{Leadership \& Awards}
+\textbf{HackMIT 2024}: Sponsor Prize Winner; 
+\textbf{SFHacks 2024}: Best Use of AI; 
+\textbf{Opportunity Hacks 2023}: Finalist   \\ 
+% \textbf{Opportunity Hacks 2023}: Finalist \\
+\textbf{1st Place} Undergraduate Team at WiCS Coding Competition; \textbf{1st Place} at HackerDevils Hackathon \\
+\textbf{\href{https://devlabs.club/}{DevLabs, Industry Director}}: Raised over 5000\$ in Club Funding, Hosted Technical Panel Discussions \\
+% \textbf{\href{https://students.engineering.asu.edu/tutoring/}{ASU Engineering Tutoring Center}}: Tutored concepts from Java, C++, and Calculus to 60+ students. \\
+% \textbf{\href{https://thesoda.io//}{Software Developers Association, Technical Officer}}: Developed a responsive website using NextJS, Tailwind.
+\end{document}
